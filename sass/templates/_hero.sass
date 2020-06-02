@@ -1,11 +1,11 @@
-.footer-hero
+.header-hero
    background: $dark url('../img/main-hero.jpg') no-repeat center / cover
 .hero
   padding-bottom: 13.2rem
   &__content
   &__title
-    width: 44.6rem
-    height: 24.4rem
+    max-width: 44.6rem
+    max-height: 24.4rem
     color: $light
     font-family: 'Myriad Pro'
     font-size: 8.4rem
@@ -14,8 +14,8 @@
     line-height: 8rem
     margin-bottom: 3.1rem
   &__subtitle
-    width: 26.9rem
-    height: 6rem
+    max-width: 26.9rem
+    max-height: 6rem
     color: $secondary
     font-family: 'Myriad Pro'
     font-size: 2.5rem
@@ -24,8 +24,8 @@
     line-height: 3rem
     margin-bottom: 25.6rem
   &__text
-    width: 35.8rem
-    height: 3.4rem
+    // max-width: 35.8rem
+    // max-height: 3.4rem
     color: $light
     font-family: 'Myriad Pro'
     font-size: 3.5rem
@@ -33,11 +33,28 @@
     letter-spacing: 0.1rem
     margin-bottom: 2.8rem
   &__subtext
-    width: 34.3rem
-    height: 1.4rem
+    // max-width: 34.3rem
+    // max-height: 1.4rem
     color: $secondary
     font-family: 'Myriad Pro'
-    font-size: 1.4rem
+    font-size: 1.6rem
     font-weight: 400
     letter-spacing: 0.05rem
    
+.subtitle
+  &__thanks
+    margin-bottom: 10rem
+.title
+  &__thanks
+    margin-top: 5rem    
+
+    
+@media screen and ( max-width: 580px)
+  .hero
+    &__title
+      max-width: 20rem
+      font-size: 4.5rem
+      line-height: 5rem
+    &__subtitle
+      font-size: 1.5rem
+      line-height: 2rem

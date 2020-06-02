@@ -1,0 +1,196 @@
+.characteristics
+  position: relative
+  background: $dark url('../img/main-hero.jpg') no-repeat center / cover
+  padding-top: 20rem
+  padding-bottom: 19.8rem
+  &::before
+    content: ''
+    background-color: rgba(#222222, 0.95)
+    position: absolute
+    bottom: 0
+    width: 100%
+    height: 100%
+  &-top, &-bottom
+    display: flex
+    justify-content: space-between
+    max-width: 64.4rem
+  &-top
+    margin-bottom: 7.4rem
+  
+    
+  &__content
+    position: relative
+    display: flex
+    justify-content: space-between
+  &__title
+    max-width: 17.9rem
+    max-height: 6rem
+    color: $light
+    font-family: 'Myriad Pro'
+    font-size: 7.5rem
+    font-weight: 900
+    letter-spacing: 0.4rem
+    margin-bottom: 3.5rem
+  &__subtitle
+    max-width: 19rem
+    max-height: 2.5rem
+    color: $light
+    font-family: 'Myriad Pro'
+    font-size: 2.5rem
+    font-weight: 400
+    margin-bottom: 8.3rem
+  &__transmission
+    margin-bottom: 4.5rem
+
+.ai
+  max-width: 17.6rem
+  margin-right: 10rem
+  &__title
+    color: $light
+    font-family: 'Myriad Pro'
+    font-size: 7.5rem
+    font-weight: 900
+    margin-bottom: 2.2rem
+  &__text
+    max-width: 12.4rem
+    max-height: 7.2rem
+    color: $light
+    font-family: 'Myriad Pro'
+    font-size: 1.9rem
+    font-weight: 400
+    &-item
+      margin-bottom: 1rem
+  &__plus
+    display: flex
+    flex-direction: column
+    margin-left: 4.3rem
+  &__subtitle
+    max-width: 2.1rem
+    max-height: 1.9rem
+    color: #17bebb
+    font-family: 'Myriad Pro'
+    font-size: 2rem
+    font-weight: 600
+    padding-top: 1rem
+    margin-bottom: 2.5rem
+  &-main
+    display: flex
+
+.date 
+  max-width: 24.9rem
+  &__main 
+    display: flex
+  &__title
+    color: $light
+    font-family: 'Myriad Pro'
+    font-size: 7.5rem
+    font-weight: 900
+    margin-bottom: 4.6rem
+  &__subtitle
+    max-width: 4.4rem
+    max-height: 1.9rem
+    color: #17bebb
+    font-family: 'Myriad Pro'
+    font-size: 2rem
+    font-weight: 600
+    margin-left: 4rem
+    padding-top: 1rem
+  &__row
+    display: flex
+  &__people, &__door
+    color: $light
+    font-family: 'Myriad Pro'
+    font-size: 3rem
+    font-weight: 400
+    margin: 0 1.1rem 0 1.1rem
+    padding-top: 1rem
+.document
+  max-width: 20.5rem
+  margin-right: 10rem
+  &__text
+    color: $light
+    font-family: 'Myriad Pro'
+    font-size: 1.9rem
+    font-weight: 400
+    line-height: 3rem
+    margin-top: 4.3rem
+.bright 
+  color: $bright
+  margin: 0
+.like
+  max-width: 25rem
+  &__title
+    color: $light
+    font-family: 'Myriad Pro'
+    font-size: 1.85rem
+    font-weight: 400
+    margin: 4.3rem 0 2rem 0
+  &__text
+    color: $dim
+    font-family: 'Myriad Pro'
+    font-size: 1.6rem
+    font-weight: 400
+    line-height: 2rem
+
+@media screen and ( max-width: 1256px)
+  .document
+    margin-right: 5rem
+  .ai
+    margin-right: 5rem
+
+@media screen and ( max-width: 1160px)
+  .characteristics
+    &__transmission, &__mileage 
+      display: none
+    &__content
+      display: flex
+      flex-direction: column
+@media screen and ( max-width: 800px)
+  .characteristics
+    &__title
+      font-size: 5rem
+      margin-bottom: 0
+    &__subtitle
+      font-size: 2rem
+      margin-bottom: 5rem
+@media screen and ( max-width: 740px)   
+  .characteristics
+      padding-top: 10rem
+      padding-bottom: 10rem
+  .document
+    &__text
+      font-size: 1.5rem
+  .ai
+    &__text
+      font-size: 1.5rem
+    &__title
+      font-size: 5rem
+  .date
+    &__title
+      font-size: 5rem
+    &__door
+      font-size: 2.5rem
+    &__people
+      font-size: 2.5rem
+@media screen and ( max-width: 760px)
+  .characteristics
+    padding-bottom: 10rem
+    padding-top: 10rem
+
+@media screen and ( max-width: 690px)
+  .characteristics
+    &-top
+      display: flex
+      flex-direction: column
+    &-bottom
+      display: flex
+      flex-direction: column
+    &-right
+      display: flex
+      flex-direction: column
+  .ai, .document, .like
+    padding-bottom: 4rem
+     
+     
+    
+    

@@ -1,0 +1,63 @@
+.menu
+  color: $light 
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding-top: 9.2rem
+  padding-bottom: 5.3rem
+.logo
+  display: flex
+  &__content
+    // width: 22.4rem
+    display: flex
+    flex-direction: column
+    padding-left: 2.2rem
+  &__title
+    color: $light
+    padding-bottom: 0.7rem
+    font-family: 'Myriad Pro'
+    text-decoration: none
+    font-size: 3.3rem
+    font-weight: 600
+    letter-spacing: 0.1rem
+  &__subtitle
+    color: $secondary
+    text-decoration: none
+    font-family: 'Myriad Pro'
+    font-size: 1.5rem
+    font-weight: 400
+    letter-spacing: 0.1rem
+.nav
+  &__item
+    color: $secondary
+    text-decoration: none
+    margin-left: 5.7rem
+    font-family: 'Open Sans'
+    font-size: 1.6rem
+    font-weight: 400
+    letter-spacing: 0.1rem
+    padding-bottom: 1.9rem
+    &:hover
+      color: $light
+      border-bottom: 0.2rem solid $light
+      
+        
+@media screen and ( max-width: 1170px)
+  .nav
+    &__item
+      margin-left: 2rem
+  .hero
+    &__text, &__subtext
+      display: none    
+@media screen and ( max-width: 970px)
+  .nav
+    &__item
+      display: none
+@media screen and ( max-width: 580px)
+
+  .logo
+    &__title
+      font-size: 2.5rem
+    &__subtitle
+      font-size: 1.2rem
+        
