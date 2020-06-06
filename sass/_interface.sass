@@ -1,6 +1,6 @@
 .button
-  width: 25.6rem
-  height: 4.4rem
+  height: 5.2rem
+  // max-width: 80rem
   border-radius: 0.3rem
   background-color: $bright
   color: $light
@@ -9,22 +9,44 @@
   font-weight: 400
   outline: none
   border: none
+  margin-top: 4.5rem
   &:hover
     transform: scale(1.02)
 .input
-  margin-bottom: 4.5rem
   outline: none
   border: none
   border-bottom: 2px solid #444444
   border-radius: 1px
   background-color: #222222
-  width: 25.6rem
   height: 5.4rem
   border-radius: 0.3rem
   font-family: 'Myriad Pro'
   font-size: 1.5rem
   font-weight: 400
   color: $light
+ 
+
+.scrollup
+  position: fixed
+  right: 10px
+  bottom: 10px
+  padding: 30px 30px 30px 30px
+  border: 1px solid $bright
+  border-radius: 50%
+  display: flex
+  margin: 0 10px 10px 0
+  justify-content: flex-end
+  background: url('../img/scrollup.png') no-repeat center
+  &:focus
+    outline: none
+    box-shadow: 0px 5px 15px rgba($bright, 0.5)
+    transition: box-shadow 0.2s
+
+@media(max-width: 700px) 
+  .scrollup
+    padding: 25px 25px 25px 25px
 
 
-
+@media(max-width: 580px) 
+  .scrollup
+    padding: 20px 20px 20px 20px

@@ -1,17 +1,16 @@
 .order  
   background-color: rgba(#222222, 1)
-  padding-bottom: 15.7rem
+  //padding-bottom: 15.7rem
   &__form
     display: flex
     flex-direction: column
+    max-width: 50rem
   &__input-group
     display: flex
     flex-direction: column
   &__content
     display: flex
     border-top: 0.1rem solid #444444
-    padding-top: 19.9rem
-    justify-content: space-between
     flex-wrap: wrap
   &__title
     max-width: 19.8rem
@@ -27,7 +26,7 @@
     max-width: 25.6rem
     text-align: center
     font-family: 'Myriad Pro'
-    font-size: 1.7rem
+    font-size: 1.45rem
     font-weight: 400
     color: $dim
     text-decoration: none
@@ -36,17 +35,15 @@
       text-decoration: underline
       cursor: pointer
   &__list
-    max-width: 25.6rem
-    height: 5.5rem
+    height: 9rem
     border-radius: 3px
     border: 1px solid #444444
     background-color: #222222
     outline: none
     color: $light
     font-family: 'Myriad Pro'
-    font-size: 1.6rem
+    font-size: 2.5rem
     font-weight: 400
-    margin-bottom: 2rem
   &__item
     color: $light
     font-family: 'Myriad Pro'
@@ -59,7 +56,6 @@
     font-size: 1rem
     font-weight: 400
   &__price
-    display: flex
     flex-direction: column
 .price
   display: flex
@@ -68,34 +64,23 @@
     max-height: 6.2rem
     color: $light
     font-family: 'Myriad Pro'
-    font-size: 5.5rem
+    font-size: 8rem
     font-weight: 600
     margin-bottom: 2.5rem
   &-currency
     color: $dim
     font-family: 'Myriad Pro'
-    font-size: 2rem
+    font-size: 2.5em
     font-weight: 900
     padding-left: 2rem
     padding-top: 0.5rem
   &-old
-    max-width: 6.2rem
+    max-width: 7.2rem
     height: 1.8rem
     color: #17bebb
     font-family: 'Myriad Pro'
-    font-size: 2rem
+    font-size: 2.5rem
     font-weight: 400
     text-decoration: line-through
+    padding-left: 1rem
 
-@media screen and ( max-width: 1020px)
-  .order
-    &__form, &__price
-      padding-bottom: 4rem
-      //padding-right: 4rem
-    &__title
-      margin-bottom: 4rem
-@media screen and ( max-width: 760px)
-  .order 
-    padding-bottom: 10rem
-    &__content
-      padding-top: 10rem

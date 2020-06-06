@@ -1,29 +1,45 @@
 .video
-  // padding-bottom: 19.8rem
   &__main
     display: flex
     justify-content: center
     align-items: center
     margin: auto
-    background: url(../img/main-video.png) no-repeat center
-    max-width: 100.3rem
-    min-height: 50.6rem
-    margin-top: -30rem
+    background: url(../img/main-video.png) no-repeat center /cover
     margin-bottom: 14.3rem
+    margin-top: -30rem
+  &__border
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100px
+    height: 100px
+    &:hover
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 90px
+      height: 90px
+      border: 1px solid #ff823d
+      border-radius: 50%
+    &-slides
+      position: absolute
+      top: 49px 
+      left: 122px
+      margin: auto
+      width: 90px
+      height: 90px
   &__play
     position: relative
     cursor: pointer
   &__floor
     display: flex
-    
+    justify-content: center
   &__text
-    width: 275px
     height: 95px
     color: $dark
     font-family: 'Myriad Pro'
-    font-size: 2.7rem
     font-weight: 400
-    margin-right: 12.1rem
+    //margin-right: 12.1rem
     padding-bottom: 15rem
     &-exlus
       color: $bright
@@ -35,20 +51,110 @@
       font-size: 1.5rem
       font-weight: 600
       padding-right: 2rem
-    
-@media screen and ( max-width: 970px)
-  .video
-    &__main
-      max-width: 80rem
-      min-height: 40rem
-      margin-top: -20rem
-    &__text
-      font-size: 2rem
-      padding-bottom: 5rem
-@media screen and ( max-width: 740px)
-  .video
-    &__main
-      max-width: 60rem
-      min-height: 30rem
-      margin-top: -15rem
+      text-decoration: none
+    &-icon
+      padding-top: 2px
+  &__offer 
+    // margin-right: 15rem
+.play_btn, .play_btn2
+  &:hover
+    cursor: pointer
 
+//Слайдер
+@media(max-width: 1250px) 
+  .slider1 
+      width: 300px
+    
+@media(min-width: 991px) 
+  .slider1 
+      width: 760px
+
+//Подпись под слайдером
+.desc >span
+  color: #444444
+  font-family: 'Myriad Pro'
+  font-size: 1.5rem  
+  &:hover
+    color: #17bebb
+.slider__btn_prev, .slider__btn_next 
+    width: 50px
+    height: 50px
+    border: none
+    outline: none
+.slider__nav 
+    position: absolute
+    width: 100%
+    top: 0
+
+.slider__btn_prev 
+    background: url('../img/car/prev.png')
+    background-repeat: no-repeat
+    background-size: contain
+    position: absolute
+    left: -30px
+    top: 62px
+.slider__btn_next 
+    background: url('../img/car/next.png')
+    background-repeat: no-repeat
+    background-size: contain
+    position: absolute
+    right: -30px
+    top: 62px
+    &::before
+      display: none
+  
+.slider1__item .img 
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 100%
+    margin-bottom: 2.6rem
+    //z-index: 150
+
+.slider1__item .play_btn 
+    position: absolute
+    border: none
+    background: none
+    outline: none
+
+.slider1__item .desc 
+    color: #fff
+    padding: 5px
+
+.slider1__item .overlay 
+    width: 100%
+    height: 20.5rem
+    background: rgba(23, 190, 187, 0.60)
+    position: absolute
+    top: 0
+    left: 0
+    opacity: 0
+    transition: all .2s
+    z-index: 120
+
+.slider1__item  
+  &:hover
+    .overlay
+      opacity: 1 !important
+    .desc >span
+      color: #17bebb
+    .video__border-slides  
+      border: 1px solid #39bac1
+      border-radius: 50%
+      z-index: 120
+      top: 55px
+      left: 135px
+.play_btn, .play_btn2 
+  z-index: 150
+   
+@media screen and ( max-width: 990px)
+  .slider1__item  
+    &:hover
+      .video__border-slides
+        top: 40px
+        left: 105px
+  .slider1__item .overlay 
+    width: 100%
+    height: 17rem

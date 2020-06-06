@@ -2,42 +2,44 @@
   background-color: rgba(#222222, 1)
   &__content
     display: flex
-    padding-bottom: 11.3rem
+    justify-content: space-around
+    flex-wrap: wrap
   &-right
     display: flex
-    justify-content: space-between
+    justify-content: flex-start
   &__title
+    margin-top: 0
     max-width: 8.7rem
     max-height: 1.2rem
     color: $light
     font-family: 'Myriad Pro'
     font-size: 1.8rem
     font-weight: 400
-    margin-bottom: 5.3rem
   &__item
     max-width: 16rem
     color: $dim
     font-family: 'Myriad Pro'
-    font-size: 1.7rem
     font-weight: 400
     margin-bottom: 1.5rem
+    text-decoration: none
     &:hover
       color: #17bebb
       text-decoration: underline
       cursor: pointer
   &__floor
     display: flex
-    justify-content: space-between 
+    justify-content: space-between
+    flex-wrap: wrap
     padding-bottom: 8rem
   &__icons
     display: flex
+    flex-wrap: wrap
   &__icon 
     display: flex
     justify-content: center
     align-items: center
     width: 54px
     height: 54px
-    margin-right: 1.8rem
     border: 1px solid #444444
     border-radius: 50%
     &:hover
@@ -55,16 +57,103 @@
     font-size: 1.4rem
     font-weight: 400
     padding-top: 1.5rem
-.requisite
-  padding-right: 10rem
 
 
-@media screen and ( max-width: 630px)
-  .footer
-    &__text
-      display: none
-    &__item
-      font-size: 1.2rem
+
+//Слайдер
+@media(max-width: 2500px) 
+  .slider3
+    width: 706px
+    height: 250px
+@media(min-width: 800px) 
+  .slider3
+    width: 706px
+    &__content
+      width: 690px
+.slider3
+  background: url('../img/footer/footer-slide-bg.png') no-repeat center / cover
+  
+.slider3__item
+  width: 690px
+  
+.slider3__btn_prev, .slider3__btn_next 
+  width: 12px
+  height: 12px
+  border: none
+  outline: none   
+
+.slider3__btn_prev
+  background: url('../img/footer/footer-prev.svg')
+  background-repeat: no-repeat
+  background-size: contain
+  position: absolute
+  left: 590px
+  top: 190px
+  &::hover
+    cursor: pointer
+    fill: #17bebb
+.slider3__btn_prev path
+   &::hover
+    cursor: pointer
+    color: $light  
+
+.slider3__btn_next 
+  background: url('../img/footer/footer-next.svg')
+  background-repeat: no-repeat
+  background-size: contain
+  position: absolute
+  right: 60px
+  top: 190px
+  &::hover
+    cursor: pointer
+    fill: #17bebb
+    
+.slider3
+  &__title
+    color: $light
+    font-family: 'Myriad Pro'
+    font-size: 1.8rem
+    font-weight: 400
+    max-width: 320px
+    line-height: 2.5rem
+    padding-top: 4rem
+    padding-left: 7rem
+  &__subtitle
+    color: $dim
+    font-family: 'Myriad Pro'
+    font-size: 1.7rem
+    font-weight: 400
+    max-width: 300px
+    line-height: 2.2rem
+    padding-top: 4rem
+    padding-left: 7rem
+  &__subtitle >span
+    color: $light
+  &__numeral
+    display: flex
+    position: absolute
+    left: 550px
+    top: 40px
+  &__amount
+    color: $dim
+    font-family: 'Myriad Pro'
+    font-size: 1.5rem
+    font-weight: 400
+  &__slash
+    color: $dim
+    font-family: 'Myriad Pro'
+    font-size: 1.5rem
+    font-weight: 400
+    margin-left: 2rem
+  &__number
+    color: $light
+    font-family: 'Myriad Pro'
+    font-size: 2rem
+    font-weight: 400
+    margin-left: 4rem
+  
+
+
 
   
 
